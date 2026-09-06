@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Wedding | Isuru & Dinithi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f8f4ed;--paper:#fffdf9;--ink:#26352f;--sage:#718579;--gold:#b8955d;--muted:#778078}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+h1,h2,h3,.script{font-family:"Cormorant Garamond",serif}
+a{text-decoration:none;color:inherit}
+.container{width:min(1080px,92%);margin:auto}
+.btn{display:inline-block;padding:13px 25px;border:1px solid var(--gold);border-radius:40px;color:var(--ink);background:rgba(255,255,255,.7);transition:.3s}
+.btn:hover{background:var(--gold);color:white;transform:translateY(-2px)}
+nav{position:fixed;z-index:10;top:0;left:0;right:0;padding:18px 5%;display:flex;justify-content:center;gap:30px;font-size:12px;letter-spacing:2px;text-transform:uppercase;background:rgba(248,244,237,.82);backdrop-filter:blur(10px)}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:100px 20px 60px;background:radial-gradient(circle at 50% 25%,#fffdf9 0,#f8f4ed 55%,#eae8df 100%)}
+.hero:before,.hero:after{content:"";position:absolute;width:330px;height:330px;border:1px solid rgba(184,149,93,.25);border-radius:50%}
+.hero:before{left:-170px;top:20%}.hero:after{right:-170px;bottom:10%}
+.kicker{letter-spacing:5px;text-transform:uppercase;font-size:11px;color:var(--gold)}
+.names{font-size:clamp(64px,10vw,118px);font-weight:500;line-height:.85;margin:24px 0}
+.amp{font-size:.5em;color:var(--gold);font-style:italic}
+.date{letter-spacing:4px;text-transform:uppercase;font-size:13px}
+.hero p{max-width:570px;margin:28px auto;color:var(--muted)}
+.hero .btn{margin-top:10px}
+section{padding:95px 0}
+.section-title{text-align:center;font-size:52px;font-weight:500;margin-bottom:12px}
+.section-sub{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 48px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.photo{min-height:500px;border-radius:180px 180px 12px 12px;background:linear-gradient(135deg,#d9d3c7,#aeb9ae);display:grid;place-items:center;color:white;font-family:"Cormorant Garamond";font-size:26px;box-shadow:0 18px 45px #26352f16}
+.story-text h3{font-size:42px;margin-bottom:15px}
+.story-text p{color:var(--muted);margin-bottom:16px}
+.details{background:var(--paper)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{padding:42px 30px;text-align:center;border:1px solid #ded8cc;background:#fff;border-radius:16px}
+.icon{font-size:26px;color:var(--gold);margin-bottom:10px}.card h3{font-size:31px;font-weight:500}.card p{color:var(--muted);margin:12px 0 20px}
+.countdown{text-align:center;background:var(--ink);color:white}
+.countdown .section-title{color:white}
+.timer{display:flex;justify-content:center;gap:clamp(18px,5vw,55px);margin-top:40px}
+.time strong{display:block;font:500 clamp(42px,7vw,70px)/1 "Cormorant Garamond";color:#e2c995}.time span{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c5cbc6}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery div{height:260px;border-radius:12px;background:linear-gradient(135deg,#c9c0b2,#849488);display:grid;place-items:center;color:white;font-family:"Cormorant Garamond";font-size:22px}
+.gallery div:nth-child(2){height:340px}.gallery div:nth-child(3){height:220px}.gallery div:nth-child(4){height:300px}.gallery div:nth-child(5){height:250px}.gallery div:nth-child(6){height:330px}
+.rsvp{background:var(--paper)}
+.form{max-width:650px;margin:auto;background:white;padding:40px;border-radius:18px;border:1px solid #e1dbd0}
+input,select,textarea{width:100%;padding:14px 15px;margin:7px 0 16px;border:1px solid #d8d4ca;border-radius:8px;background:#fff;font:inherit}
+textarea{min-height:110px;resize:vertical}
+label{font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.form button{border:0;cursor:pointer;font:inherit}
+footer{text-align:center;padding:55px 20px;background:#e9e5dc}.footer-names{font-size:44px}.hashtag{color:var(--gold);margin-top:8px}
+@media(max-width:700px){nav{gap:13px;font-size:9px}.story,.cards{grid-template-columns:1fr}.story{gap:30px}.photo{min-height:390px}.section-title{font-size:43px}.gallery{grid-template-columns:1fr 1fr}.gallery div,.gallery div:nth-child(n){height:210px}.timer{gap:16px}.form{padding:25px}.names{font-size:70px}}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#story">Our Story</a><a href="#details">Details</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a>
+</nav>
+
+<header class="hero">
+<div>
+<div class="kicker">Together with their families</div>
+<h1 class="names">Isuru <span class="amp">&</span> Dinithi</h1>
+<div class="date">03 December 2026 · Hikkaduwa, Sri Lanka</div>
+<p>With joyful hearts, we invite you to celebrate the beginning of our forever.</p>
+<a class="btn" href="#details">View Invitation ↓</a>
+</div>
+</header>
+
+<section id="story">
+<div class="container story">
+<div class="photo">Your Couple Photo</div>
+<div class="story-text">
+<div class="kicker">Our Story</div>
+<h2>Two hearts, one beautiful journey.</h2>
+<p>It started with a simple hello and became a story we never want to end. Through every laugh, adventure and quiet moment, we found home in each other.</p>
+<p>Now, we're excited to begin our next chapter surrounded by the people we love most.</p>
+</div>
+</div>
+</section>
+
+<section id="details" class="details">
+<div class="container">
+<h2 class="section-title">The Celebration</h2>
+<p class="section-sub">Please join us as we celebrate our wedding day.</p>
+<div class="cards">
+<div class="card"><div class="icon">♡</div><h3>Ceremony</h3><p>Thursday, 03 December 2026<br>10:00 AM<br>Beautiful Wedding Venue, Hikkaduwa</p><a class="btn" href="#" onclick="openMap(event)">Get Directions</a></div>
+<div class="card"><div class="icon">✦</div><h3>Reception</h3><p>Thursday, 03 December 2026<br>6:30 PM<br>Elegant Reception Venue, Hikkaduwa</p><a class="btn" href="#" onclick="openMap(event)">Get Directions</a></div>
+</div>
+</div>
+</section>
+
+<section class="countdown">
+<div class="container">
+<h2 class="section-title">Counting Down to Forever</h2>
+<div class="timer">
+<div class="time"><strong id="days">00</strong><span>Days</span></div>
+<div class="time"><strong id="hours">00</strong><span>Hours</span></div>
+<div class="time"><strong id="minutes">00</strong><span>Minutes</span></div>
+<div class="time"><strong id="seconds">00</strong><span>Seconds</span></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<h2 class="section-title">Moments We Love</h2>
+<p class="section-sub">Replace these placeholders with your favourite engagement and pre-wedding photographs.</p>
+<div class="gallery">
+<div>Photo 01</div><div>Photo 02</div><div>Photo 03</div><div>Photo 04</div><div>Photo 05</div><div>Photo 06</div>
+</div>
+</div>
+</section>
+
+<section id="rsvp" class="rsvp">
+<div class="container">
+<h2 class="section-title">Will You Join Us?</h2>
+<p class="section-sub">Please let us know if you'll be celebrating with us.</p>
+<form class="form" onsubmit="submitRSVP(event)">
+<label>Your Name</label><input id="name" required placeholder="Enter your name">
+<label>Number of Guests</label><select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+<label>Attendance</label><select id="attendance"><option>Joyfully attending</option><option>Regretfully unable to attend</option></select>
+<label>Message</label><textarea id="message" placeholder="Leave a message for the couple..."></textarea>
+<button class="btn" type="submit">Confirm Attendance</button>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="footer-names">Isuru <span class="amp">&</span> Dinithi</div>
+<div class="hashtag">#NethadunAndPartner</div>
+<p style="margin-top:15px;color:#778078">With love, always.</p>
+</footer>
+
+<script>
+const weddingDate = new Date("2026-12-15T10:00:00+05:30").getTime();
+function countdown(){
+ const now=Date.now(), diff=Math.max(0,weddingDate-now);
+ document.getElementById("days").textContent=String(Math.floor(diff/86400000)).padStart(2,"0");
+ document.getElementById("hours").textContent=String(Math.floor(diff/3600000)%24).padStart(2,"0");
+ document.getElementById("minutes").textContent=String(Math.floor(diff/60000)%60).padStart(2,"0");
+ document.getElementById("seconds").textContent=String(Math.floor(diff/1000)%60).padStart(2,"0");
+}
+countdown();setInterval(countdown,1000);
+function submitRSVP(e){
+ e.preventDefault();
+ const name=document.getElementById("name").value;
+ alert(`Thank you, ${name}! Your RSVP has been recorded. Connect this form to your backend/email service to receive real responses.`);
+ e.target.reset();
+}
+function openMap(e){
+ e.preventDefault();
+ window.open("https://www.google.com/maps/search/?api=1&query=Kandy%2C%20Sri%20Lanka","_blank");
+}
+</script>
+</body>
+</html>
