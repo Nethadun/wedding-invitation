@@ -146,12 +146,12 @@ function countdown(){
  document.getElementById("seconds").textContent=String(Math.floor(diff/1000)%60).padStart(2,"0");
 }
 countdown();setInterval(countdown,1000);
-function submitRSVP(e){
- e.preventDefault();
- const name=document.getElementById("name").value;
- alert(`Thank you, ${name}! Your RSVP has been recorded. Connect this form to your backend/email service to receive real responses.`);
- e.target.reset();
-}
+// function submitRSVP(e){
+//  e.preventDefault();
+//  const name=document.getElementById("name").value;
+//  alert(`Thank you, ${name}! Your RSVP has been recorded. Connect this form to your backend/email service to receive real responses.`);
+//  e.target.reset();
+// }
 function openMap(e){
  e.preventDefault();
  window.open("https://www.google.com/maps/search/?api=1&query=Kandy%2C%20Sri%20Lanka","_blank");
